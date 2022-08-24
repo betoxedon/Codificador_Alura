@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;300&display=swap');
+
+body {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #f3f5fc;
+    padding: 40px;
+}
+
+#logo-alura {
+    position: absolute;
+    left: 44px;
+}
+
+#entrada {
+    position: absolute;
+    width: 640px;
+    height: 48px;
+    top: 168px;
+    left: 240px;
+
+    font-family: "inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    border: none;
+    background: #f3f5fc;
+    resize: none;
+}
+
+#tela-saida {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#img-saida{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 32px;
+    top: 283px;
+}
+
+.saida  {
+    width: 336px;
+    height: 58px;
+    
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    position: absolute;
+    right: 32px;
+    top: 579px;
+}
+
+.msg-saida {
+    position: absolute;
+    left: 32px;
+    top: 693px;
+
+    width: 336px;
+    height: 48px;
+
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#exclamacao {
+    width: 16px;
+    height: 16px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    position: absolute;
+    top: 852px;
+    left: 240px;
+}
+
+.aviso {
+    position: absolute;
+    left: 264px;
+    top: 851px;
+
+    width: 228px;
+    height: 18px;
+
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#btn-cripto {
+    box-sizing: border-box;
+    
+    position: absolute;
+    top: 885px;
+    left: 240px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #0a3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#btn-uncripto {
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 885px;
+    left: 592px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
