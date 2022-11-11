@@ -10,22 +10,44 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <img id="logo-alura" src="logo-alura.svg" alt="Logo Alura azul.">
+    
+    
+    <section class="principal">
+        
+        <div class="container">
+            
+            <img id="logo-alura" src="logo-alura.svg" alt="Logo Alura azul.">
+            
+            <div class="interação">
+                
+                <textarea name="entrada" id="entrada" cols="30" rows="10" placeholder="Digite seu texto aqui..."></textarea>
+                
+                <div class="btn-info">
+                    <div>
+                        <img id="exclamacao" src="exclamacao.png" alt="sinal de exclamacao em fundo cinza.">
+                        <p class="aviso">Apenas letras minúsculas e sem acento</p>
+                    </div>
+                    <div class="btn-btn">
+                        <button id="btn-cripto">Criptografar</button>
+                        <button id="btn-uncripto">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id="tela-saida">
+            <img id="img-saida" src="img-padrao.svg" alt="pessoa com lupa na mão observando um diamante">
+            <div class="texto">
+                <p class="saida">Nenhuma mensagem encontrada.</p>
+                <p class="msg-saida">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </div>
+        
 
-    <textarea name="entrada" id="entrada" cols="30" rows="10" placeholder="Digite seu texto aqui..."></textarea>
-    
-    
-    <div id="tela-saida">
-        <img id="img-saida" src="img-padrao.svg" alt="pessoa com lupa na mão observando um diamante">
-        <p class="saida">Nenhuma mensagem encontrada</p>
-        <p class="msg-saida">Digite um texto que você deseja criptografar ou descriptografar.</p>
-    </div>
-    
-    <img id="exclamacao" src="exclamacao.png" alt="sinal de exclamacao em fundo cinza.">
-    <p class="aviso">Apenas letras minúsculas e sem acento</p>
-
-    <button id="btn-cripto">Criptografar</button>
-    <button id="btn-uncripto">Descriptografar</button>
+        
+        
+    </section>
 
 </body>
 </html>
