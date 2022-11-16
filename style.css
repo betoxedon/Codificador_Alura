@@ -77,3 +77,168 @@ body   {
     display: flex;
     flex-direction: column;
 }
+
+#img-saida {
+    height: 204px;
+    width: 236px;
+    align-self: center;
+}
+
+
+.saida {
+    width: 336px;
+    height: 58px;
+    margin-bottom: 50px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    /* or 29px */
+    text-align: center;
+
+    /* Gray/gray-500 */
+    color: #343A40;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.msg-saida {
+    width: 336px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    /* or 24px */
+    text-align: center;
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texto {
+    margin-bottom: 50px;
+}
+
+.btn-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+#exclamacao {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.aviso {
+    
+    width: 228px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    /* identical to box height, or 18px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btn {
+    margin: 12px;
+    justify-content: center;
+}
+
+.btn-btn {
+    display: flex;
+    justify-content: center;
+    margin-right: 10vh;
+}
+
+#btn-cripto {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    color: white;
+
+    width: 328px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    /*text*/
+
+    text-align: center;
+}
+
+#btn-uncripto {
+
+    color: #0A3871;
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Light gray */
+    background: #D8DFE8;
+
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.info {
+    display: flex;
+
+}
