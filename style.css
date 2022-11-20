@@ -16,12 +16,13 @@ body   {
 .principal {
     display: flex;
     justify-content: space-around;
-    padding: 40px;
-    height: 80vh;
+    padding: 40px 20px 20px 40px;
+    height: 90vh;
+    flex-wrap: wrap;
 }
 
 .container  {
-    align-self: flex-start;
+    align-self: center;
     flex-grow: 2;
     flex-wrap: wrap;
 }
@@ -31,7 +32,7 @@ body   {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #tela-saida {
@@ -41,19 +42,18 @@ body   {
     align-items: center;
     flex-direction: column;
     border-radius: 32px;
-    display: flex;
     justify-content: space-around;
-    flex-basis: 320px;
+    flex-basis: 300px;
 }
 
 #entrada {
-    flex-grow: 1;
+    flex-grow: 2;
     margin-right: 10vh;
     height: 50vh;
     background-color:  #F3F5FC;
     resize: none;
     border: none;
-    flex-basis: 320px;
+    flex-basis: 300px;
     
     /* font */
 
@@ -71,6 +71,7 @@ body   {
 
 .texto   {
     text-align: center;
+    justify-content: space-around;
 }
 
 .btn   {
@@ -87,8 +88,9 @@ body   {
 
 .saida {
     width: 336px;
+    flex-basis: 300px;
     height: 58px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -141,7 +143,7 @@ body   {
 .btn-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-items: center;
 }
 
@@ -175,20 +177,21 @@ body   {
 }
 
 .btn {
-    margin: 12px;
+    margin: 12px 40px 12px 40px;
     justify-content: center;
 }
 
 .btn-btn {
     display: flex;
     justify-content: center;
-    margin-right: 10vh;
+    width:fit-content;
+    flex-grow: 2;
+    flex-wrap: wrap;
 }
 
 #btn-cripto {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
     gap: 8px;
     color: white;
@@ -201,9 +204,10 @@ body   {
     border-radius: 24px;
 
     /* Inside auto layout */
-    flex: none;
+    flex:content;
     order: 0;
-    flex-grow: 0;
+    flex-grow: 1;
+    flex-basis: 200px;
 
     /*text*/
 
@@ -218,7 +222,7 @@ body   {
     /* Auto layout */
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     padding: 24px;
     gap: 8px;
 
@@ -235,10 +239,177 @@ body   {
     /* Inside auto layout */
     flex: none;
     order: 1;
-    flex-grow: 0;
+    flex-grow: 1;
+    flex-basis: 200px;
 }
 
 .info {
     display: flex;
+    align-self: flex-start;
+
+}
+
+@media (max-width: 450px){
+    
+    .principal {
+        flex-direction: column;
+        padding: 5vw;
+        align-items: center;
+        height: fit-content
+    }
+
+    .container {
+        margin: 0;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .interação {
+        margin: 0;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #entrada {
+        width: 80vw;
+        margin: 10px 0 15px 0;
+        justify-content: center;
+        font-size: 24px;
+        min-width: 300px;
+
+    }
+
+    .btn {
+        margin: 12px 0;
+    }
+    .btn-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #btn-cripto, #btn-uncripto {
+        width: 80vw;
+        min-width: 300px;
+        max-width: 328px;
+        max-height: 58px;
+        align-self: center;
+        align-items: center;
+    }
+
+    #tela-saida {
+        width: 80vw;
+        min-width: 300px;
+    }
+    
+    #img-saida {
+        display: none;
+    }
+
+    .texto {
+        margin: 40px;
+
+
+    }
+
+    #tela-saida {
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    #exclamacao {
+        margin-left: 0px;
+    }
+
+}
+
+
+@media ((max-width: 1080px) and (orientation: landscape)) or (max-width: 1080px){
+
+    .principal {
+        flex-direction: column;
+        padding: 5vw;
+        align-items: center;
+        height: fit-content
+    }
+
+    .container {
+        margin: 0;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .interação {
+        margin: 0;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #entrada {
+        width: 80vw;
+        margin: 10px 0 15px 0;
+        justify-content: center;
+        font-size: 24px;
+        min-width: 300px;
+
+    }
+
+    .info {
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+
+    .btn {
+        margin: 12px 0;
+    }
+
+    .btn-info {
+        margin: auto;
+    }
+
+    .btn-btn {
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+        margin-bottom: 20px;
+        
+    }
+
+    #btn-cripto, #btn-uncripto {
+        width: 80vw;
+        min-width: 300px;
+        max-width: 328px;
+        margin: 10px;
+        margin-bottom: 10px;
+    }
+
+    #tela-saida {
+        width: 80vw;
+        min-width: 300px;
+    }
+    
+    #img-saida {
+        display: none;
+    }
+
+    .texto {
+        margin: 40px;
+
+
+    }
+
+
+    #tela-saida {
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    #exclamacao {
+        margin-left: 0px;
+    }
 
 }
