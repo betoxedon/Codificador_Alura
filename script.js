@@ -27,7 +27,7 @@ async function clipboardCopy() {
 }
 
 function organize(){
-  document.getElementById('msg-saida').style.textAlign='justify'
+  document.getElementById('msg-saida').style.textAlign='center'
   document.getElementById("saida").style.display="none"
   document.getElementById("img-saida").style.display="none"
   document.getElementById("copy").style.visibility="visible"
