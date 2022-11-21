@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;300&display=swap');
 
+
 body   {
-    display: flex;
-    flex-direction: column;
     background: #F3F5FC;
 }
-
-#logo-alura {
-    /* position: absolute;
-    top: 40px;
-    left: 84px; */
-}
-
 
 .principal {
     display: flex;
@@ -22,129 +14,56 @@ body   {
 }
 
 .container  {
+    display: flex;
+    flex-direction: column;
     align-self: center;
     flex-grow: 2;
     flex-wrap: wrap;
 }
 
+#logo-alura {
+    align-self: flex-start;
+}
+
 .interação {
-    margin-left: 10vh;
+    margin-left: 5vw;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-around;
 }
 
-#tela-saida {
-    background: white;
-    width: 320px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 32px;
-    justify-content: space-around;
-    flex-basis: 300px;
-}
-
 #entrada {
     flex-grow: 2;
-    margin-right: 10vh;
     height: 50vh;
     background-color:  #F3F5FC;
     resize: none;
     border: none;
     flex-basis: 300px;
+    margin-right: 5vw;
     
     /* font */
-
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 150%;
     color: #0A3871;
+    text-align: justify;
 }
 
-.msg-saida {
-    text-align: center;
-}
-
-.texto   {
-    text-align: center;
-    justify-content: space-around;
-}
-
-.btn   {
-    display: flex;
-    flex-direction: column;
-}
-
-#img-saida {
-    height: 204px;
-    width: 236px;
-    align-self: center;
-}
-
-
-.saida {
-    width: 336px;
-    flex-basis: 300px;
-    height: 58px;
-    margin-bottom: 20px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-
-    /* or 29px */
-    text-align: center;
-
-    /* Gray/gray-500 */
-    color: #343A40;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.msg-saida {
-    width: 336px;
-    height: 48px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-
-    /* or 24px */
-    text-align: center;
-
-    /* Gray/gray-400 */
-    color: #495057;
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texto {
-    margin-bottom: 50px;
-}
 
 .btn-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    align-items: stretch;
+    margin-right: 5vw;
+}
+
+.info {
+    display: flex;
+    align-self: flex-start;    
 }
 
 #exclamacao {
@@ -156,98 +75,175 @@ body   {
     
     width: 228px;
     height: 18px;
-
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-
+    
     /* identical to box height, or 18px */
-
+    
     /* Gray/gray-400 */
     color: #495057;
-
+    
     opacity: 0.8;
-
+    
     /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
-.btn {
-    margin: 12px 40px 12px 40px;
-    justify-content: center;
-}
-
 .btn-btn {
     display: flex;
-    justify-content: center;
-    width:fit-content;
+    justify-content: stretch;
     flex-grow: 2;
     flex-wrap: wrap;
 }
 
-#btn-cripto {
+.btn   {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 12px;
+    justify-content: center;
+}
+
+
+#btn-cripto, #btn-uncripto, .copy {
+    display: flex;
     padding: 24px;
     gap: 8px;
-    color: white;
-
     width: 328px;
     height: 67px;
-
-    /* Dark blue/dark-blue-300 */
-    background: #0A3871;
-    border-radius: 24px;
-
-    /* Inside auto layout */
+    max-height: 67px;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
     flex:content;
     order: 0;
     flex-grow: 1;
     flex-basis: 200px;
+}
 
-    /*text*/
+#btn-cripto {
 
-    text-align: center;
+    color: white;
+    
+    /* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    border-radius: 24px;
+    
 }
 
 #btn-uncripto {
-
+    
     color: #0A3871;
     box-sizing: border-box;
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 24px;
-    gap: 8px;
-
-    width: 328px;
-    height: 67px;
-
+    
     /* Light gray */
     background: #D8DFE8;
-
+    
     /* Dark blue/dark-blue-300 */
     border: 1px solid #0A3871;
     border-radius: 24px;
+    
+}
+
+
+#tela-saida {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    justify-content: space-around;
+
+}
+
+
+#img-saida {
+    height: 204px;
+    width: 236px;
+    align-self: center;
+}
+
+
+.texto   {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.saida {
+    width: 300px;
+    flex-basis: 300px;
+    height: 58px;
+    margin-bottom: 20px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    
+    /* or 29px */
+    text-align: center;
+    
+    /* Gray/gray-500 */
+    color: #343A40;
+    
 
     /* Inside auto layout */
     flex: none;
+    order: 0;
+    align-self: center;
+    flex-grow: 0;
+}
+
+.msg-saida {
+    width: 400px;
+    height: auto;
+    word-wrap: break-word;
+    white-space: wrap;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    
+    /* or 24px */
+    text-align: center;
+    
+    /* Gray/gray-400 */
+    color: #495057;
+    
+    
+    /* Inside auto layout */
+    flex: none;
     order: 1;
-    flex-grow: 1;
-    flex-basis: 200px;
+    align-self: center;
+    justify-self: center;
+    flex-grow: 0;
 }
 
-.info {
-    display: flex;
-    align-self: flex-start;
+.copy {
+    color: #0A3871;
+    
+    /* Dark blue/dark-blue-300 */
+    background: white;
+    border-radius: 24px;
 
+    visibility: hidden;
+    
 }
+
 
 @media (max-width: 450px){
     
@@ -257,159 +253,121 @@ body   {
         align-items: center;
         height: fit-content
     }
-
+    
     .container {
-        margin: 0;
+        display: flex;
+        flex-direction: column;
         flex-grow: 1;
         justify-content: center;
         align-items: center;
+        margin: 0;
     }
-
+    
+    #logo-alura {
+        margin-left: 5vw;
+    }
+    
     .interação {
         margin: 0;
         padding: 0px;
         justify-content: center;
         align-items: center;
     }
-
-
+    
+    
     #entrada {
         width: 80vw;
         margin: 10px 0 15px 0;
         justify-content: center;
-        font-size: 24px;
+        font-size: 18px;
         min-width: 300px;
-
+        
     }
 
+    .btn-info {
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: 0px;
+    }
+    
+    .btn-btn {
+        flex-direction: column;
+        align-items: stretch;
+        justify-items: stretch;
+    }
+    
     .btn {
         margin: 12px 0;
     }
-    .btn-btn {
-        flex-direction: column;
-        align-items: center;
-    }
-
+    
+    
     #btn-cripto, #btn-uncripto {
         width: 80vw;
         min-width: 300px;
         max-width: 328px;
         max-height: 58px;
-        align-self: center;
         align-items: center;
     }
-
+    
     #tela-saida {
         width: 80vw;
         min-width: 300px;
+        align-items: center;
     }
     
     #img-saida {
         display: none;
     }
-
+    
     .texto {
-        margin: 40px;
-
-
-    }
-
-    #tela-saida {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 40px;
     }
-    #exclamacao {
-        margin-left: 0px;
+    
+    .msg-saida {
+        width: 300px;
     }
 
 }
 
-
-@media ((max-width: 1080px) and (orientation: landscape)) or (max-width: 1080px){
-
-    .principal {
-        flex-direction: column;
-        padding: 5vw;
-        align-items: center;
-        height: fit-content
-    }
-
-    .container {
-        margin: 0;
-        flex-grow: 1;
-        justify-content: center;
-        align-items: center;
-    }
-
+@media (orientation: landscape) and (max-width:1000px){
+    
     .interação {
-        margin: 0;
-        padding: 0px;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    #entrada {
-        width: 80vw;
-        margin: 10px 0 15px 0;
-        justify-content: center;
-        font-size: 24px;
-        min-width: 300px;
-
-    }
-
-    .info {
-        margin: auto;
-        margin-bottom: 5px;
-    }
-
-
-    .btn {
-        margin: 12px 0;
-    }
-
-    .btn-info {
-        margin: auto;
-    }
-
-    .btn-btn {
-        flex-direction: row;
-        justify-content: space-between;
-        align-self: center;
-        margin-bottom: 20px;
-        
-    }
-
-    #btn-cripto, #btn-uncripto {
-        width: 80vw;
-        min-width: 300px;
-        max-width: 328px;
-        margin: 10px;
-        margin-bottom: 10px;
-    }
-
-    #tela-saida {
-        width: 80vw;
-        min-width: 300px;
+        /* margin-left: 5vw; */
     }
     
+    #tela-saida {
+        width: 80vw;
+        /* margin-left: 5vw; */
+        align-self: center;
+    }
     #img-saida {
         display: none;
     }
-
-    .texto {
-        margin: 40px;
-
-
+    .msg-saida {
+        width: 75vw;
     }
+}
 
+@media (orientation: portrait) {
+
+    .principal{
+        height: fit-content;
+    }
+    .interação {
+        /* margin-left: 2vw; */
+    }
 
     #tela-saida {
-        align-items: center;
-        margin-bottom: 40px;
+        /* margin-left: 2vw; */
+        width: 80vw;
+        align-self: center;
     }
-    #exclamacao {
-        margin-left: 0px;
+    #img-saida {
+        display: none;
     }
-
+    .msg-saida {
+        width: 75vw;
+    }
 }

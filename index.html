@@ -10,44 +10,31 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
-    
     <section class="principal">
-        
         <div class="container">
-            
             <img id="logo-alura" src="logo-alura.svg" alt="Logo Alura azul.">
-            
             <div class="interação">
-                
-                <textarea name="entrada" id="entrada" cols="30" rows="10" placeholder="Digite seu texto aqui..."></textarea>
-                
+                <textarea name="entrada" id="entrada" cols="30" rows="10" placeholder="Digite seu texto aqui..."></textarea>        
                 <div class="btn-info">
                     <div class="info">
                         <img id="exclamacao" src="exclamacao.png" alt="sinal de exclamacao em fundo cinza.">
                         <p class="aviso">Apenas letras minúsculas e sem acento</p>
                     </div>
                     <div class="btn-btn">
-                        <button class="btn" id="btn-cripto">Criptografar</button>
-                        <button class="btn" id="btn-uncripto">Descriptografar</button>
+                        <button class="btn" id="btn-cripto" onclick="cripto()">Criptografar</button>
+                        <button class="btn" id="btn-uncripto" onclick="uncripto()">Descriptografar</button>
                     </div>
                 </div>
             </div>
-            
-        </div>
-        
+        </div>   
         <div id="tela-saida">
             <img id="img-saida" src="img-padrao.svg" alt="pessoa com lupa na mão observando um diamante">
             <div class="texto">
-                <p class="saida">Nenhuma mensagem encontrada.</p>
-                <p class="msg-saida">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p class="saida" id="saida">Nenhuma mensagem encontrada.</p>
+                <p class="msg-saida" id="msg-saida">Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-        </div>
-        
-
-        
-        
+            <button class="copy btn" id="copy" onclick="clipboardCopy()">Copiar</button>
+        </div>        
     </section>
-
 </body>
 </html>
